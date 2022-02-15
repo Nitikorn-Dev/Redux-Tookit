@@ -1,4 +1,27 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@300;400;500;600;700&display=swap');
+@import './common/colors.scss';
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Prompt', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background:$primary-color;
+}
+
+.container {
+  margin:0 40px;
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +58,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
