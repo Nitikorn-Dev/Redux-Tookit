@@ -1,6 +1,5 @@
 import React from 'react'
-import { useAppSelector } from '../../features/hooks'
-import { selectMovie } from '../../features/movies/movieSlice'
+import { Link } from 'react-router-dom';
 import './MovieCard.scss';
 
 interface MovieCardType {
@@ -9,6 +8,7 @@ interface MovieCardType {
 function MovieCard({ movie }: MovieCardType) {
   return (
     <div className="card-item">
+      <Link to={`/movie/${movie.imdbID}`}>
       <div className="card-inner">
         <div className="card-inner">
           <div className="card-top">
@@ -22,6 +22,7 @@ function MovieCard({ movie }: MovieCardType) {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   )
 }
