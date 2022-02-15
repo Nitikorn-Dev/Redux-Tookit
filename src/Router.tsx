@@ -3,7 +3,7 @@ import Home from "./components/Home/Home";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
-export default function(){
+export default function Router(){
     return useRoutes([
         {
             path:'/' ,index:true,element:<Home />,

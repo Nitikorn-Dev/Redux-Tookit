@@ -1,6 +1,4 @@
 import React from 'react'
-import { useAppSelector } from '../../features/hooks'
-import { selectMovie } from '../../features/movies/movieSlice'
 import './MovieCard.scss';
 
 interface MovieCardType {
