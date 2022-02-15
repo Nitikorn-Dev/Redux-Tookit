@@ -3,5 +3,5 @@ interface Movie {
     Title:string;
     Type:string;
     Year:string;
-    imdbId:string;
+    imdbID:string;
 }
