@@ -8,9 +8,11 @@ import {Outlet} from 'react-router-dom';
 
 function Home() {
 const dispatch = useAppDispatch();
+const movieText = 'Harry';
+const seriesText = 'Friends';
   useEffect(()=>{
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(seriesText));
   },[dispatch]);
   return (
     <>
