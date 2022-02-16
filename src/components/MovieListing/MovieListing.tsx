@@ -3,6 +3,8 @@ import { useAppSelector } from '../../features/hooks';
 import { getSelectMovie,getSelectShows } from '../../features/movies/movieSlice';
 import MovieCard from '../MovieCard/MovieCard';
 import './MovieListing.scss';
+import Slider from 'react-slick';
+import {settings} from '../../common/settings';
 
 function MovieListing() {
   const movies = useAppSelector(getSelectMovie);
@@ -32,13 +34,13 @@ function MovieListing() {
       <div className="movie-list">
         <h2>Movies</h2>
         <div className="movie-container">
-          {renderMovies}
+          <Slider {...settings}>{renderMovies}</Slider>
         </div>
       </div>
-      <div className="movie-list">
+      <div className="show-list">
         <h2>Shows</h2>
         <div className="movie-container">
-          {renderShows}
+        <Slider {...settings}>{renderShows}</Slider>
         </div>
       </div>
     </div>
